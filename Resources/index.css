@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta";
+}
+
+:root {
+
+    --bgcolor: rgb(237 157 10);
+    --fontcolor: white;
+    --navbgcolor: #2589ff;
+    --navfontcolor: rgb(237 157 10);
+    --bannerbgcolor: #2589ff;
+
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--navbgcolor);
+}
+
+.nav-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    color:var(--navfontcolor);
+}
+
+.nav-left img {
+    width: 60px;
+    margin: 10px;
+}
+
+.nav-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--navfontcolor);
+    font-size: 30px;
+    margin-right: 20px;
+    -webkit-text-stroke: 0.2px black;
+}
+
+main {
+    width: 94.5%;
+    margin: 25px;
+}
+
+.Songs-list ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Songs-list ul li {
+    width: 200px;
+    padding: 5px;
+    background-color: var(--bannerbgcolor);
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.Songs-list ul li:hover {
+    transform: scale(1.1);
+}
+
+li img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+li p {
+    width: 100%;
+    color: var(--fontcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+
+    .Songs-list ul li {
+        width: 400px;
+        margin-bottom: 25px;
+    }
+
+    .Songs-list ul li:hover {
+        transform: scale(1.05);
+    }
+
+    li p {
+        font-size: 25px;
+    }
+
+    .nav-left {
+        width: 20%;
+    }
+
+    .nav-right {
+        width: 80%;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .nav-left {
+        width: 10%;
+    }
+
+    .nav-right {
+        width: 90%;
+    }
+
+    .nav-left img {
+        width: 30px;
+        margin: 5px;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+}
