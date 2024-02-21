@@ -3,7 +3,7 @@ let currentsong = new Audio();
 
 async function getsongs() {
 
-    let a = await fetch("/Music%20Player/Resources/Songs/")
+    let a = await fetch("Resources/Songs/")
     let response = await a.text();
     console.log(response)
 
