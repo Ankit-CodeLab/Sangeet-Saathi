@@ -3,7 +3,7 @@ let currentsong = new Audio();
 
 async function getsongs() {
 
-    let a = await fetch("https://github.com/Ankit-CodeLab/Sangeet-Saathi/tree/main/Resources/Songs")
+    let a = await fetch("Resources/Songs")
     let response = await a.text();
     console.log(response)
 
